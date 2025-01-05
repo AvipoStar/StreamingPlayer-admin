@@ -1,0 +1,52 @@
+/* Header.css */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header-gray);
+  color: var(--color-main-white);
+}
+
+.header .left-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header h1 {
+  color: var(--color-main-white);
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+.user-fio {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-fio-img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.user-fio-none-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: var(--color-main-green);
+  border-radius: 50%;
+}

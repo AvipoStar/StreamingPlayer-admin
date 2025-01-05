@@ -1,0 +1,31 @@
+.Tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.TabsNames {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.TabName {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+.TabName:hover {
+  background-color: #ddd;
+}
+
+.TabName.active {
+  background-color: #fff;
+  border-bottom: 2px solid #007bff;
+}
+
+.TabsChildren {
+  padding: 20px;
+}

@@ -1,0 +1,22 @@
+.Playlist {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #00000033;
+  box-shadow: #333 0px 0px 8px 0px;
+  cursor: pointer;
+}
+
+.Playlist-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.Playlist-title {
+  font-size: 18px;
+  margin-left: 10px;
+}

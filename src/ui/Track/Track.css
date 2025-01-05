@@ -1,0 +1,97 @@
+.Track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.Track:hover {
+  border: 1px solid #007bff;
+}
+
+.TrackData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.TrackImageContainer {
+  position: relative;
+  width: 60px;
+}
+
+.TrackImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.TrackIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+}
+
+.TrackPlayIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  opacity: 0;
+}
+
+.TrackTitle {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+.TrackAuthors {
+  font-size: 16px;
+  display: block;
+}
+
+.TrackDuration {
+  font-size: 14px;
+}
+
+.Track:hover .TrackPlayIcon {
+  opacity: 1;
+}
+
+.Track:hover .TrackImg,
+.Track:hover .TrackIndex {
+  opacity: 0;
+}
+
+.FavoriteImg {
+  cursor: pointer;
+  width: 35px;
+}
+
+.TrackHelpers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.TrackAuthor {
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+.TrackAuthor:hover {
+  color: #007bff;
+  text-decoration: none;
+}

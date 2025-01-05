@@ -1,0 +1,50 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-icon {
+  width: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.link-text {
+  color: #282c34;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.link-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.selected {
+  background-color: #00000033;
+  box-shadow: #333 0px 0px 8px 0px;
+  border-radius: 12px;
+}

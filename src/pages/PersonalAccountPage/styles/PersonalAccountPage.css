@@ -1,0 +1,28 @@
+.PersonalAccountPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  /* width: 100%; */
+  padding: 10px;
+  width: 100%;
+}
+
+.EditProfileForm {
+  padding: 20px;
+  min-width: 400px;
+}
+
+.TrackList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.AlbumList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: 200px;
+}
