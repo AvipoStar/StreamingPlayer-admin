@@ -1,0 +1,22 @@
+.GenrePage {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.GenrePage-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.Genre-preview {
+  width: 250px;
+  height: 250px;
+}
+
+.Genre-title {
+}

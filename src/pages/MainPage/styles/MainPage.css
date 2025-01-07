@@ -14,3 +14,9 @@
   flex-wrap: wrap;
   gap: 20px; /* Расстояние между плитками */
 }
+
+.GenresTab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

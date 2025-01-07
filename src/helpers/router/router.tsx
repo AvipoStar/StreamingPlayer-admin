@@ -2,6 +2,7 @@ import { AddMusicPage } from "../../pages/AddMusicPage/AddMusicPage";
 import { AdminsPanel } from "../../pages/AdminsPanel/AdminsPanel";
 import AlbumPage from "../../pages/AlbumPage/AlbumPage";
 import AuthorPage from "../../pages/AuthorPage/AuthorPage";
+import GenrePage from "../../pages/GenretPage/GenrePage";
 import { LoginPage } from "../../pages/LoginPage/LoginPage";
 import { MainPage } from "../../pages/MainPage/MainPage";
 import { NotFoundPage } from "../../pages/NotFound/NotFoundPage";
@@ -53,6 +54,11 @@ const routes = {
     path: "/playlist/:playlist_id",
     element: <PlaylistPage />,
     name: "Страница плейлиста",
+  },
+  genre: {
+    path: "/genre/:genre_id",
+    element: <GenrePage />,
+    name: "Страница жанра",
   },
 };
 

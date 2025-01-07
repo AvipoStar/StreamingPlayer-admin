@@ -5,10 +5,10 @@ import { ITrackParams, Track } from "../../ui/Track/Track";
 import { convertLocalPathToUrl } from "../../helpers/functions/convertLocalPathToUrl";
 
 import "./PlaylistPage.css";
-import { IPlaylist } from "../MainPage/atoms/Playlist";
 import { getFavoritesTracks, getPlaylistTracks } from "./logic/getTracks";
 
 import favoriteImg from "../../assets/icons/favoritesPhoto.jpeg";
+import { IPlaylist } from "../../ui/Playlist/Playlist";
 
 const PlaylistPage = () => {
   const { playlist_id } = useParams<{ playlist_id: string }>();

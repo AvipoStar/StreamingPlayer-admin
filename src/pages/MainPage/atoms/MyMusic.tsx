@@ -32,10 +32,16 @@ const MyMusic = () => {
   return (
     <div className="main-page">
       <div className="playlists">
-        <Playlist id={0} title={"Любимое"} preview_url={favoritePhoto} />
+        <Playlist
+          key={`playlist-${0}`}
+          id={0}
+          title={"Любимое"}
+          preview_url={favoritePhoto}
+        />
         {playlists.length ? (
           playlists.map((playlist) => (
             <Playlist
+              key={`playlist-${playlist.id}`}
               id={playlist.id}
               title={playlist.title}
               preview_url={convertLocalPathToUrl(playlist?.preview_url)}
@@ -49,6 +55,7 @@ const MyMusic = () => {
         {allTracks.length ? (
           allTracks.map((track, index) => (
             <Track
+              key={`track-${track.id}`}
               id={track.id}
               title={track.title}
               duration={track.duration}

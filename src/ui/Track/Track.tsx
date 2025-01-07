@@ -62,7 +62,7 @@ export const Track = (params: ITrackParams) => {
   };
 
   return (
-    <div className="Track" key={params.view_index}>
+    <div className="Track" key={params.id}>
       <div className="TrackData">
         <div className="TrackImageContainer">
           {params.preview_url ? (
