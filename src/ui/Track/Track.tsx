@@ -3,7 +3,7 @@ import { convertLocalPathToUrl } from "../../helpers/functions/convertLocalPathT
 import playIcon from "../../assets/icons/play_circle_24dp_007BFF_FILL1_wght400_GRAD0_opsz24.svg";
 import favoriteIconFill from "../../assets/icons/favorite_24dp_007BFF_FILL1_wght400_GRAD0_opsz24.svg";
 import favoriteIcon from "../../assets/icons/favorite_24dp_007BFF_FILL0_wght400_GRAD0_opsz24.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toggleFavoriteTrack } from "./logic/favorite";
 import addToPlaylist from "../../assets/icons/plus.svg";
 

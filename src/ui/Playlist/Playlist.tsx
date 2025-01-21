@@ -1,4 +1,3 @@
-import React from "react";
 import "./Playlist.css";
 import { generatePath, useNavigate } from "react-router";
 import routes from "../../helpers/router/router";

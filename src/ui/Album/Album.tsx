@@ -1,6 +1,4 @@
-import React from "react";
 import "./Album.css";
-import { baseUrl } from "../../helpers/axios/axiosInstance";
 import { generatePath, useNavigate } from "react-router";
 import routes from "../../helpers/router/router";
 import { ITrackParams } from "../Track/Track";

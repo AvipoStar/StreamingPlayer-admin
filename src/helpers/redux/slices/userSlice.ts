@@ -30,10 +30,10 @@ const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    setData: (state, action) => {
+    setData: (_state, action) => {
       return action.payload;
     },
-    updateUser: (state, action) => {
+    updateUser: (_state, action) => {
       return action.payload;
     },
   },

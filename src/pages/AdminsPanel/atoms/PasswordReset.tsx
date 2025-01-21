@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getRequests, resetPasswordResponse } from "../logic/admin";
 
 const PasswordReset = () => {

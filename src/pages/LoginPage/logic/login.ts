@@ -1,6 +1,5 @@
 import axiosInstance from "../../../helpers/axios/axiosInstance";
 import { IUser } from "../../../helpers/redux/slices/userSlice";
-import PasswordInput from "../../../ui/PasswordInput/PasswordInput";
 
 export const register = async (formData: IUser) => {
   try {

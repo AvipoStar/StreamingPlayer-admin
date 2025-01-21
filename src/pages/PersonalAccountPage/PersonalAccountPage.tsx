@@ -24,7 +24,7 @@ export const PersonalAccountPage = () => {
         },
         {
           id: 1,
-          text: "Трэки",
+          text: "Треки",
           children: <TracksTab />,
         },
         {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ITrackParams, Track } from "../../ui/Track/Track";
 import { useParams } from "react-router";
 import { getGenreTracks } from "./logic/getGenreTracks";

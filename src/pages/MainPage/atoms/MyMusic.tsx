@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ITrackParams, Track } from "../../../ui/Track/Track";
 import { useSelector } from "react-redux";
 import { IPlaylist, Playlist } from "../../../ui/Playlist/Playlist";

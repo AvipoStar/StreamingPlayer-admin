@@ -11,7 +11,7 @@ const genresSlice = createSlice({
   name: "genres",
   initialState,
   reducers: {
-    setGenres: (state, action) => {
+    setGenres: (_state, action) => {
       return action.payload;
     },
   },

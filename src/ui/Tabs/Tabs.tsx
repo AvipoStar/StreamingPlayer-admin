@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import "./Tabs.css";
 
 interface ITab {
@@ -21,6 +21,7 @@ export const Tabs = (params: ITabs) => {
             key={tab.id}
             className={`TabName ${activeTab === tab.id ? "active" : ""}`}
             onClick={() => setActiveTab(tab.id)}
+            style={{width: '100%'}}
           >
             {tab.text}
           </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getTablesData } from "../logic/tablesData";
 
-const TablesData = () => {
+const DBFunctions = () => {
   const [tablesData, setTablesData] = useState<any[]>([]);
 
   useEffect(() => {
@@ -54,4 +54,4 @@ const TablesData = () => {
   );
 };
 
-export default TablesData;
+export default DBFunctions;

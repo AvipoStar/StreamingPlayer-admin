@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { IAlbumParams } from "../../ui/Album/Album";
 import Spinner from "../../ui/Spinner/Spinner";

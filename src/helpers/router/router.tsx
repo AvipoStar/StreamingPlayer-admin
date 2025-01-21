@@ -8,6 +8,7 @@ import { MainPage } from "../../pages/MainPage/MainPage";
 import { NotFoundPage } from "../../pages/NotFound/NotFoundPage";
 import { PersonalAccountPage } from "../../pages/PersonalAccountPage/PersonalAccountPage";
 import PlaylistPage from "../../pages/PlaylistPage/PlaylistPage";
+import { SuperAdminsPanel } from "../../pages/SuperAdminPanel/SuperAdminsPanel";
 
 const routes = {
   main: {
@@ -29,6 +30,11 @@ const routes = {
     path: "/AdminsPanel",
     element: <AdminsPanel />,
     name: "Панель администратора",
+  },
+  superAdminPanel: {
+    path: "/SuperAdminsPanel",
+    element: <SuperAdminsPanel />,
+    name: "Панель супер-администратора",
   },
   login: {
     path: "/login",

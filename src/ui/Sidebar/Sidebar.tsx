@@ -8,6 +8,7 @@ import menuIcon from "../../assets/icons/menu_24dp_007BFF_FILL0_wght400_GRAD0_op
 import personIcon from "../../assets/icons/person_24dp_007BFF_FILL0_wght400_GRAD0_opsz24.svg";
 import adminIcon from "../../assets/icons/shield_person_24dp_007BFF_FILL0_wght400_GRAD0_opsz24.svg";
 import musicIcon from "../../assets/icons/library_add_24dp_007BFF_FILL0_wght400_GRAD0_opsz24.svg";
+import superAdminIcon from "../../assets/icons/admin_panel_settings_24dp_007BFF_FILL0_wght400_GRAD0_opsz24.svg";
 
 import "./Sidebar.css";
 
@@ -62,7 +63,7 @@ const Sidebar = () => {
                 )}
               </div>
             </Link>
-            {userData?.role_id == 2 ? (
+            {userData?.role_id == 2 && (
               <Link to={routes.adminsPanel.path}>
                 <div
                   className={
@@ -78,10 +79,8 @@ const Sidebar = () => {
                   )}
                 </div>
               </Link>
-            ) : (
-              <></>
             )}
-            {userData?.is_author ? (
+            {userData?.is_author && (
               <Link to={routes.addMusicPage.path}>
                 <div
                   className={
@@ -99,8 +98,25 @@ const Sidebar = () => {
                   )}
                 </div>
               </Link>
-            ) : (
-              <></>
+            )}
+            {userData?.role_id == 4 && (
+              <Link to={routes.superAdminPanel.path}>
+                <div
+                  className={
+                    selectedRoute == routes.superAdminPanel.name
+                      ? "link selected"
+                      : "link"
+                  }
+                  onClick={() => setSelectedRoute(routes.superAdminPanel.name)}
+                >
+                  <img src={superAdminIcon} className="link-img" />
+                  {isOpen && (
+                    <span className="link-text">
+                      {routes.superAdminPanel.name}
+                    </span>
+                  )}
+                </div>
+              </Link>
             )}
           </ul>
         </nav>

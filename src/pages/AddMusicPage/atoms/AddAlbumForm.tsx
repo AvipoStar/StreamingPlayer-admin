@@ -19,7 +19,7 @@ export const AddAlbumForm = () => {
     }));
   };
 
-  const handlePreviewChange = (file: File) => {
+  const handlePreviewChange = (file: File | null) => {
     setAlbumData((prevData) => ({
       ...prevData,
       preview: file,
@@ -68,7 +68,11 @@ export const AddAlbumForm = () => {
       </div>
       <div>
         <label>Превью:</label>
-        <FileUploader onFileUpload={handlePreviewChange} required />
+        <FileUploader
+          onFileUpload={handlePreviewChange}
+          required
+          file={albumData.preview}
+        />
       </div>
 
       <button type="submit">Добавить альбом</button>

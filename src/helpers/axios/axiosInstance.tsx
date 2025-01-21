@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const baseUrl = "http://79.104.192.137/"
-// export const baseUrl = "http://localhost:8000/"
+// export const baseUrlForUploads = "http://79.104.192.137/"
 
 const axiosInstance = axios.create({
   baseURL: baseUrl,
