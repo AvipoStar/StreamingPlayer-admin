@@ -1,6 +1,7 @@
 import { Tabs } from "../../ui/Tabs/Tabs";
 import AuthorStatsCSVDownloader from "./atoms/AuthorStatsCSV";
 import PasswordReset from "./atoms/PasswordReset";
+import ReportsTab from "./atoms/ReportsTab";
 import AuthorStatsChart from "./atoms/Statistics";
 import TablesData from "./atoms/TablesData";
 
@@ -28,6 +29,11 @@ export const AdminsPanel = () => {
             id: 3,
             text: "Статистика автора",
             children: <AuthorStatsCSVDownloader />,
+          },
+          {
+            id: 4,
+            text: "Отчеты",
+            children: <ReportsTab />,
           },
         ]}
       ></Tabs>

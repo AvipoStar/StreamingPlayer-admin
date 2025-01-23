@@ -8,9 +8,12 @@ import favoritePhoto from "../../../assets/icons/favoritesPhoto.jpeg";
 import { convertLocalPathToUrl } from "../../../helpers/functions/convertLocalPathToUrl";
 
 import "../styles/MainPage.css";
+import { getReport } from "../logic/getReport";
+import { useNavigate } from "react-router";
 
 const MyMusic = () => {
   const userSelector = useSelector((state: any) => state.user);
+  const navigate = useNavigate();
 
   const [playlists, setPlaylists] = useState<IPlaylist[]>([]);
   const [allTracks, setAllTracks] = useState<ITrackParams[]>([]);
@@ -29,6 +32,14 @@ const MyMusic = () => {
     const result = await getAllTracks();
     if (result) setAllTracks(result);
   };
+
+  const handleGetReport = async () => {
+    const result = await getReport();
+    if (result) {
+      navigate("/report", { state: { reportHTML: result } });
+    }
+  };
+
   return (
     <div className="main-page">
       <div className="playlists">
@@ -68,6 +79,11 @@ const MyMusic = () => {
         ) : (
           <></>
         )}
+      </div>
+
+      <div>
+        <h2>О тчет о понравившемся</h2>
+        <button onClick={handleGetReport}>Получить</button>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import { NotFoundPage } from "../../pages/NotFound/NotFoundPage";
 import { PersonalAccountPage } from "../../pages/PersonalAccountPage/PersonalAccountPage";
 import PlaylistPage from "../../pages/PlaylistPage/PlaylistPage";
 import { SuperAdminsPanel } from "../../pages/SuperAdminPanel/SuperAdminsPanel";
+import ReportPage from "../../ui/ReportPage/ReportPage";
 
 const routes = {
   main: {
@@ -65,6 +66,11 @@ const routes = {
     path: "/genre/:genre_id",
     element: <GenrePage />,
     name: "Страница жанра",
+  },
+  report: {
+    path: "/report",
+    element: <ReportPage />,
+    name: "Страница отчета",
   },
 };
 
