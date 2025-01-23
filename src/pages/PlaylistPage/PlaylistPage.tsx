@@ -43,7 +43,7 @@ const PlaylistPage = () => {
               <div className="album-header">
                 <img src={favoriteImg} className="album-cover" />
                 <div>
-                  <h1 className="album-title">Люимое</h1>
+                  <h1 className="album-title">Любимое</h1>
                 </div>
               </div>
               <div className="track-list">
