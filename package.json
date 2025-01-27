@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@date-io/core": "^3.2.0",
+    "@date-io/date-fns": "^3.2.0",
     "@reduxjs/toolkit": "^2.3.0",
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "file-saver": "^2.0.5",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.3.0",
+    "react-datepicker": "^7.6.0",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.2",
     "react-redux": "^9.1.2",
