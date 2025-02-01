@@ -1,0 +1,66 @@
+.Player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-header-gray);
+  color: var(--color-main-white);
+  padding: 0 1%;
+  justify-content: center;
+}
+
+.TrackMetaData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.TrackControls {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+.ProgressBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.ProgressBar input[type="range"] {
+  width: 100%;
+}
+
+.ProgressBar span {
+  margin-top: 5px;
+}
+
+.VolumeControl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.VolumeControl input[type="range"] {
+  width: 100%;
+  max-width: 400px;
+}
+
+.VolumeImg {
+  width: 40px;
+  cursor: pointer;
+}
+
+.VolumeValue {
+  width: 70px;
+}

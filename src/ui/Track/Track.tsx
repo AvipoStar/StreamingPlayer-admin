@@ -12,6 +12,9 @@ import routes from "../../helpers/router/router";
 import { MoreActions } from "./atoms/MoreActions";
 import { containsInPlaylist } from "./logic/containsInPlaylist";
 import { toggleTrackInPlyalist } from "./logic/toggleTrackInPlyalist";
+import { useDispatch } from "react-redux";
+import { setCurrentTrack } from "../../helpers/redux/slices/CurrentTrack";
+import { formatDuration } from "../../helpers/functions/formatDurration";
 
 export interface ITrackParams {
   id: number;
@@ -25,16 +28,13 @@ export interface ITrackParams {
 
 export const Track = (params: ITrackParams) => {
   const navigate = useNavigate();
+
+  const dispatch = useDispatch();
+
   const [inFavorite, setInFavorite] = useState<boolean>(params.inFavorites);
   const [showModalPlaylists, setShowModalPlaylists] = useState(false);
 
   const [playlists, setplaylists] = useState<any[]>([]);
-
-  const formatDuration = (duration: number) => {
-    const minutes = Math.floor(duration / 60);
-    const seconds = duration % 60;
-    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-  };
 
   const handleFavorite = async () => {
     const result = await toggleFavoriteTrack(params.id);
@@ -61,10 +61,18 @@ export const Track = (params: ITrackParams) => {
     if (result) setShowModalPlaylists(!showModalPlaylists);
   };
 
+  const handleTrackClick = (track: ITrackParams) => {
+    console.log("track", track);
+    dispatch(setCurrentTrack(track));
+  };
+
   return (
     <div className="Track" key={params.id}>
       <div className="TrackData">
-        <div className="TrackImageContainer">
+        <div
+          className="TrackImageContainer"
+          onClick={() => handleTrackClick(params)}
+        >
           {params.preview_url ? (
             <img
               src={convertLocalPathToUrl(params.preview_url)}

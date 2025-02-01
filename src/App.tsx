@@ -16,11 +16,13 @@ import { getUserData, loginToken } from "./pages/LoginPage/logic/login";
 import { setData } from "./helpers/redux/slices/userSlice";
 import Spinner from "./ui/Spinner/Spinner";
 import Sidebar from "./ui/Sidebar/Sidebar";
+import { Player } from "./ui/Player/Player";
 
 const App = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const userData = useSelector((state: any) => state.user);
+  const currentTrack = useSelector((state: any) => state.currentTrack);
   const access_token = localStorage.getItem("access_token");
   const [loading, setLoading] = useState<boolean>(false);
   const location = useLocation();
@@ -89,6 +91,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
+      {currentTrack ? <Player /> : <></>}
     </>
   );
 };

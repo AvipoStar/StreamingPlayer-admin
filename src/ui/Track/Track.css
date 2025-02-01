@@ -21,6 +21,7 @@
 .TrackImageContainer {
   position: relative;
   width: 60px;
+  cursor: pointer;
 }
 
 .TrackImg {
